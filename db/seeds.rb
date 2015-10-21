@@ -1,4 +1,7 @@
 require 'csv'
-CSV.foreach(Rails.root.join("db/seeds_data/movies.csv"), headers: true) do |row|
-  Movie.find_or_create_by(title: row[0], release_year: row[1], price: row[2], description: row[3], imdb_id: row[4], poster_url: row[5])
+csv_text = File.read('/Users/annaershova/Desktop/Mapper/db/seeds_data/marathon_list_oct_21_15.csv')
+csv = CSV.parse(csv_text, :headers => true)
+csv.each do |row|
+  Marathon.create!(row.to_hash)
 end
+
