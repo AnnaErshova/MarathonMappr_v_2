@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  city: MyString
+  country: MyString
+  date_description: MyString
+  month: 1
+  year: 1
+  day: 1
+  kind: MyString
+  latitude: 1.5
+  longitude: 1.5
+  event_date: 2015-10-21
+  part_of_the_world: MyString
+
+two:
+  name: MyString
+  city: MyString
+  country: MyString
+  date_description: MyString
+  month: 1
+  year: 1
+  day: 1
+  kind: MyString
+  latitude: 1.5
+  longitude: 1.5
+  event_date: 2015-10-21
+  part_of_the_world: MyString

@@ -1,7 +1,8 @@
+
 <%#= render "title_search_box" %>
 <div class="column">
   <h5>
-    <a class="show-advanced-search">Advanced Search <span class="fi-plus"/></a>
+    <a class="show-advanced-search">Advanced Search: <span class="fi-plus"/></a>
   </h5>
 </div>
 
@@ -9,7 +10,7 @@
 <div class="column">
   <div class="advanced-search hide form-container glassy-bg columns">
     <a class="close-advanced-search fi-x"></a>
-    <h4>Advanced Search</h4>
+    <h4>Advanced Search:</h4>
     <%= search_form_for @search do |f| %>
       <%= f.condition_fields do |c| %>
         <div class="large-4 small-4 columns">
@@ -58,10 +59,6 @@
       <th>Name</th>
       <th>City</th>
       <th>Country</th>
-      <th>Date description</th>
-      <th>Month</th>
-      <th>Year</th>
-      <th>Day</th>
       <th>Kind</th>
       <th>Latitude</th>
       <th>Longitude</th>
@@ -72,15 +69,11 @@
   </thead>
 
   <tbody>
-    <% @movies.each do |marathon| %>
+    <% @marathons.each do |marathon| %>
       <tr>
         <td><%= marathon.name %></td>
         <td><%= marathon.city %></td>
         <td><%= marathon.country %></td>
-        <td><%= marathon.date_description %></td>
-        <td><%= marathon.month %></td>
-        <td><%= marathon.year %></td>
-        <td><%= marathon.day %></td>
         <td><%= marathon.kind %></td>
         <td><%= marathon.latitude %></td>
         <td><%= marathon.longitude %></td>
@@ -93,7 +86,6 @@
 
 <br>
 
-<%= link_to 'New Marathon', new_marathon_path %>
 
   <% if false %>
   <div class="column">

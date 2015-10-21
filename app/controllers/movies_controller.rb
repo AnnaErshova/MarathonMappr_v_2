@@ -4,7 +4,7 @@ class MoviesController < ApplicationController
   # GET /movies
   # GET /movies.json
   def index
-    @search = Movie.search(params[:q])
+    @search = Marathon.search(params[:q])
     @movies = @search.result
     @search.build_condition if @search.conditions.empty?
     @search.build_sort if @search.sorts.empty?

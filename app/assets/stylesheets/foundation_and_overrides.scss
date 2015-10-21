@@ -7,7 +7,7 @@
 //
 
 // This is the default html and body font-size for the base rem value.
-// $rem-base: 16px;
+// $rem-base: rem-calc(16);
 
 // Allows the use of rem-calc() or lower-bound() in your settings
 @import "foundation/functions";
@@ -69,11 +69,11 @@ $primary-color: #B18806;
 // $info-color: #a0d3e8;
 
 // We use these to make sure border radius matches unless we want it different.
-// $global-radius: 3px;
-// $global-rounded: 1000px;
+// $global-radius: rem-calc(3);
+// $global-rounded: rem-calc(1000);
 
 // We use these to control inset shadow shiny edges and depressions.
-// $shiny-edge-size: 0 1px 0;
+// $shiny-edge-size: 0 rem-calc(1) 0;
 // $shiny-edge-color: rgba(#fff, .5);
 // $shiny-edge-active-color: rgba(#000, .2);
 
@@ -184,7 +184,7 @@ $header-font-color: #fff;
 // $anchor-font-color-hover: scale-color($primary-color, $lightness: -14%);
 
 // We use these to style the <hr> element
-// $hr-border-width: 1px;
+// $hr-border-width: rem-calc(1);
 // $hr-border-style: solid;
 // $hr-border-color: #ddd;
 // $hr-margin: rem-calc(20);
@@ -206,20 +206,20 @@ $header-font-color: #fff;
 // We use these to style blockquotes
 // $blockquote-font-color: scale-color($header-font-color, $lightness: 35%);
 // $blockquote-padding: rem-calc(9 20 0 19);
-// $blockquote-border: 1px solid #ddd;
+// $blockquote-border: rem-calc(1) solid #ddd;
 // $blockquote-cite-font-size: rem-calc(13);
 // $blockquote-cite-font-color: scale-color($header-font-color, $lightness: 23%);
 // $blockquote-cite-link-color: $blockquote-cite-font-color;
 
 // Acronym styles
-// $acronym-underline: 1px dotted #ddd;
+// $acronym-underline: rem-calc(1) dotted #ddd;
 
 // We use these to control padding and margin
 // $microformat-padding: rem-calc(10 12);
 // $microformat-margin: rem-calc(0 0 20 0);
 
 // We use these to control the border styles
-// $microformat-border-width: 1px;
+// $microformat-border-width: rem-calc(1);
 // $microformat-border-style: solid;
 // $microformat-border-color: #ddd;
 
@@ -273,7 +273,7 @@ $header-font-color: #fff;
 
 // We use these to control border styles.
 // $alert-border-style: solid;
-// $alert-border-width: 1px;
+// $alert-border-width: rem-calc(1);
 // $alert-border-color: scale-color($primary-color, $lightness: $alert-function-factor);
 // $alert-bottom-margin: rem-calc(20);
 
@@ -284,7 +284,7 @@ $header-font-color: #fff;
 // $alert-close-font-size: rem-calc(22);
 // $alert-close-opacity: 0.3;
 // $alert-close-opacity-hover: 0.5;
-// $alert-close-padding: 9px 6px 4px;
+// $alert-close-padding: rem-calc(9) rem-calc(6) rem-calc(4);
 
 // We use this to control border radius
 // $alert-radius: $global-radius;
@@ -320,7 +320,7 @@ $header-font-color: #fff;
 
 // We use these to control border styles.
 // $crumb-function-factor: -10%;
-// $crumb-border-size: 1px;
+// $crumb-border-size: rem-calc(1);
 // $crumb-border-style: solid;
 // $crumb-border-color: scale-color($crumb-bg, $lightness: $crumb-function-factor);
 // $crumb-radius: $global-radius;
@@ -368,7 +368,7 @@ $button-med: rem-calc(10);
 // $button-function-factor: -20%;
 
 // We use these to control button border styles.
-// $button-border-width: 0px;
+// $button-border-width: rem-calc(0);
 // $button-border-style: solid;
 // $button-bg: $primary-color;
 // $button-border-color: scale-color($bg, $lightness: $button-function-factor);
@@ -386,7 +386,7 @@ $button-med: rem-calc(10);
 
 // Sets the margin for the right side by default, and the left margin if right-to-left direction is used
 // $button-bar-margin-opposite: rem-calc(10);
-// $button-group-border-width: 1px;
+// $button-group-border-width: rem-calc(1);
 
 // Clearing
 
@@ -400,34 +400,34 @@ $button-med: rem-calc(10);
 
 // We use these to style the close button
 // $clearing-close-color: #ccc;
-// $clearing-close-size: 30px;
+// $clearing-close-size: rem-calc(30);
 
 // We use these to style the arrows
-// $clearing-arrow-size: 12px;
+// $clearing-arrow-size: rem-calc(12);
 // $clearing-arrow-color: $clearing-close-color;
 
 // We use these to style captions
 // $clearing-caption-font-color: #ccc;
 // $clearing-caption-font-size: 0.875em;
-// $clearing-caption-padding: 10px 30px 20px;
+// $clearing-caption-padding: rem-calc(10) rem-calc(30) rem-calc(20);
 
 // We use these to make the image and carousel height and style
 // $clearing-active-img-height: 85%;
-// $clearing-carousel-height: 120px;
-// $clearing-carousel-thumb-width: 120px;
-// $clearing-carousel-thumb-active-border: 1px solid rgb(255,255,255);
+// $clearing-carousel-height: 120rem;
+// $clearing-carousel-thumb-width: 120rem;
+// $clearing-carousel-thumb-active-border: rem-calc(1) solid rgb(255,255,255);
 
 // Dropdown
 
 // $include-html-dropdown-classes: $include-html-classes;
 
 // We use these to controls height and width styles.
-// $f-dropdown-max-width: 200px;
+// $f-dropdown-max-width: 200rem;
 // $f-dropdown-height: auto;
 // $f-dropdown-max-height: none;
 
 // Used for bottom position
-// $f-dropdown-margin-top: 2px;
+// $f-dropdown-margin-top: 2rem;
 
 // Used for right position
 // $f-dropdown-margin-left: $f-dropdown-margin-top;
@@ -443,13 +443,13 @@ $button-med: rem-calc(10);
 
 // We use this to set the border styles for dropdowns.
 // $f-dropdown-border-style: solid;
-// $f-dropdown-border-width: 1px;
+// $f-dropdown-border-width: rem-calc(1);
 // $f-dropdown-border-color: scale-color(#fff, $lightness: -20%);
 
 // We use these to style the triangle pip.
-// $f-dropdown-triangle-size: 6px;
+// $f-dropdown-triangle-size: rem-calc(6);
 // $f-dropdown-triangle-color: #fff;
-// $f-dropdown-triangle-side-offset: 10px;
+// $f-dropdown-triangle-side-offset: rem-calc(10);
 
 // We use these to control styles for the list elements.
 // $f-dropdown-list-style: none;
@@ -535,15 +535,15 @@ $input-bg-color: #E6E6E6;
 // $input-border-color: scale-color(#fff, $lightness: -20%);
 // $input-focus-border-color: scale-color(#fff, $lightness: -40%);
 // $input-border-style: solid;
-// $input-border-width: 1px;
+// $input-border-width: rem-calc(1);
 // $input-border-radius: $global-radius;
 // $input-disabled-bg: #ddd;
-// $input-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+// $input-box-shadow: inset 0 rem-calc(1) rem-calc(2) rgba(0,0,0,0.1);
 // $input-include-glowing-effect: true;
 
 // We use these to style the fieldset border and spacing.
 // $fieldset-border-style: solid;
-// $fieldset-border-width: 1px;
+// $fieldset-border-width: rem-calc(1);
 // $fieldset-border-color: #ddd;
 // $fieldset-padding: rem-calc(20);
 // $fieldset-margin: rem-calc(18 0);
@@ -556,7 +556,7 @@ $input-bg-color: #E6E6E6;
 // We use these to style the prefix and postfix input elements
 // $input-prefix-bg: scale-color(#fff, $lightness: -5%);
 // $input-prefix-border-color: scale-color(#fff, $lightness: -20%);
-// $input-prefix-border-size: 1px;
+// $input-prefix-border-size: rem-calc(1);
 // $input-prefix-border-type: solid;
 // $input-prefix-overflow: hidden;
 // $input-prefix-font-color: #333;
@@ -607,11 +607,11 @@ $input-bg-color: #E6E6E6;
 
 // Controlling default Joyride styles
 // $joyride-tip-bg: #333;
-// $joyride-tip-default-width: 300px;
+// $joyride-tip-default-width: rem-calc(300);
 // $joyride-tip-padding: rem-calc(18 20 24);
-// $joyride-tip-border: solid 1px #555;
-// $joyride-tip-radius: 4px;
-// $joyride-tip-position-offset: 22px;
+// $joyride-tip-border: solid rem-calc(1) #555;
+// $joyride-tip-radius: rem-calc(4);
+// $joyride-tip-position-offset: rem-calc(22);
 
 // Here, we're setting the tip dont styles
 // $joyride-tip-font-color: #fff;
@@ -619,10 +619,10 @@ $input-bg-color: #E6E6E6;
 // $joyride-tip-header-weight: $font-weight-bold;
 
 // This changes the nub size
-// $joyride-tip-nub-size: 10px;
+// $joyride-tip-nub-size: rem-calc(10);
 
 // This adjusts the styles for the timer when its enabled
-// $joyride-tip-timer-width: 50px;
+// $joyride-tip-timer-width: rem-calc(50);
 // $joyride-tip-timer-height: 3px;
 // $joyride-tip-timer-color: #666;
 
@@ -1222,8 +1222,8 @@ $topbar-bg-color: rgba(255, 255, 255, 0);
 // $topbar-bg: $topbar-bg-color;
 
 // Height and margin
-$topbar-height: 45px;
-$topbar-margin-bottom: 30px;
+$topbar-height: rem-calc(45);
+$topbar-margin-bottom: rem-calc(30);
 
 // Controlling the styles for the title in the top bar
 // $topbar-title-weight: $font-weight-normal;
@@ -1235,7 +1235,7 @@ $topbar-title-font-size: rem-calc(25);
 // $topbar-dropdown-link-color: #fff;
 // $topbar-dropdown-link-bg: #333;
 // $topbar-dropdown-link-weight: $font-weight-normal;
-// $topbar-dropdown-toggle-size: 5px;
+// $topbar-dropdown-toggle-size: rem-calc(5);
 // $topbar-dropdown-toggle-color: #fff;
 // $topbar-dropdown-toggle-alpha: 0.4;
 
@@ -1256,7 +1256,7 @@ $topbar-link-bg-active-hover: scale-color($primary-color, $lightness: -14%);
 $topbar-link-padding: $topbar-height / 3;
 
 // $topbar-button-font-size: 0.75rem;
-// $topbar-button-top: 7px;
+// $topbar-button-top: rem-calc(7);
 
 // $topbar-dropdown-label-color: #777;
 // $topbar-dropdown-label-text-transform: uppercase;
@@ -1305,7 +1305,7 @@ $topbar-link-padding: $topbar-height / 3;
 // $range-slider-bar-width: 100%;
 // $range-slider-bar-height: rem-calc(16);
 
-// $range-slider-bar-border-width: 1px;
+// $range-slider-bar-border-width: rem-calc(1);
 // $range-slider-bar-border-style: solid;
 // $range-slider-bar-border-color: #ddd;
 // $range-slider-radius: $global-radius;
