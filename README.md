@@ -23,7 +23,9 @@ like?
 
 ## Features
 
-Bullet point some of the key features of your app here.
+* Custom rake file for csv file imports.
+* Advanced / simple search optonality
+* Google maps mapping races
 
 ## Usage
 
