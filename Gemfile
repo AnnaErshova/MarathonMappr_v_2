@@ -4,9 +4,6 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.1'
 
-# Use mysql as the database for Active Record
-gem 'sqlite3'
-
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
 
@@ -47,6 +44,27 @@ gem 'gmaps4rails'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
+end
+
+group :test, :development do
+  gem 'rspec-rails'
+  gem 'capybara'
+  gem 'selenium-webdriver'
+  gem 'better_errors'
+  gem 'binding_of_caller'
+  gem 'factory_girl_rails'
+  gem 'simplecov'
+  gem 'database_cleaner'
+  gem 'sqlite3'
+  gem 'pry'
+  gem 'guard-rspec', require: false
+  # gem 'thin' removing thin as it creates eventmachine problems
+end
+
+group :production do
+  gem 'pg'
+  gem 'google-analytics-rails'
+  gem 'rails_12factor'
 end
 
 group :development do
