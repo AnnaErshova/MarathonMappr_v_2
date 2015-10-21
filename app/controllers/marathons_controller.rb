@@ -1,4 +1,5 @@
 class MarathonsController < ApplicationController
+  
   before_action :set_marathon, only: [:show, :edit, :update, :destroy]
 
   # GET /marathons
@@ -8,6 +9,10 @@ class MarathonsController < ApplicationController
     @marathons = @search.result
     @search.build_condition if @search.conditions.empty?
     @search.build_sort if @search.sorts.empty?
+    @hash = Gmaps4rails.build_markers(@marathons) do |marathon, marker|
+      marker.lat marathon.latitude
+      marker.lng marathon.longitude
+    end
   end
 
   # GET /marathons/1
