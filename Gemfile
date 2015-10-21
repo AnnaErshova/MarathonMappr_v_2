@@ -29,6 +29,8 @@ gem 'spring',        group: :development
 # Ransack gem for advanced search
 gem 'ransack', '~> 1.5.1'
 
+gem 'erd'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
